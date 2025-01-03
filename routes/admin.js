@@ -1,4 +1,6 @@
     const {Router} = require("express");
+    const jwt = require("jsonwebtoken");
+    const JWT_SECRET = "Iloveloligirls";
     const adminRouter = Router();
 
     adminRouter.post("/signup", (req,res)=>{

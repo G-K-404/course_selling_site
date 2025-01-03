@@ -28,10 +28,10 @@ const purchases = new Schema({
     courseid: objectId
 });
 
-const usermodel = mongoose.Model("users", users);
-const coursemodel = mongoose.Model("courses", courses);
-const adminmodel = mongoose.Model("admins", admin);
-const purchasesmodel = mongoose.Model("purchases", purchases);
+const usermodel = mongoose.model("users", users);
+const coursemodel = mongoose.model("courses", courses);
+const adminmodel = mongoose.model("admins", admin);
+const purchasesmodel = mongoose.model("purchases", purchases);
 
 module.exports = {
     usermodel: usermodel,
