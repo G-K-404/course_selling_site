@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.use("/user", userRouter);
 app.use("/course", courseRouter);
-
+app.use("/admin", adminRouter);
 let connect = process.env.mongo_connection_string;
 async function main(){
     await mongoose.connect(connect);

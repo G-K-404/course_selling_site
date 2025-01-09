@@ -4,7 +4,6 @@
     const {usermodel} = require("../db.js");
     const userRouter = Router();
     const jwt = require("jsonwebtoken");
-    const JWT_SECRET = "Iloveloligirls";
     userRouter.post("/signup", async(req,res)=>{
         let email, password, firstname, lastname = null;
         try {
